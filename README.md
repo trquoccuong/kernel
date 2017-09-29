@@ -1,17 +1,26 @@
+# Prepare
+1. Add source to /etc/apt/sources.list
+
+```
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+```
+2. Update kali
+
+```
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+```
+3. restart.
+
+4. remove default 8188EU module.
 # Installation
 
 1. Download the code (clone it or download a zipped version)
 2. Move to directory: `$ cd drivers/TL-WN722N_v2.0-Ralink/rtl8188EUS_linux_v4.3.0.8_13968.20150417`
 3. Build the driver by running: `$ make`
 4. Install it: `# make install`
-5. Load dependent modules:
-
-```
-# modprobe lib80211
-# modprobe cfg80211
-```
-
-6. Insert the module into the Linux kernel: `# insmod 8188eu.ko`
+5. Insert the module into the Linux kernel: `# insmod 8188eu.ko`
 
 # Monitor mode
 
