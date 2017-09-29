@@ -28,7 +28,7 @@ EXTRA_CFLAGS += -Wno-unused
 EXTRA_CFLAGS += -Wno-implicit-function-declaration
 
 #EXTRA_CFLAGS += -Wno-uninitialized
-
+EXTRA_CFLAGS += -Wno-incompatible-pointer-types 
 EXTRA_CFLAGS += -I$(src)/include
 
 EXTRA_LDFLAGS += --strip-debug
